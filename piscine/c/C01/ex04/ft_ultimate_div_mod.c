@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aalmheir <aalmheir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/18 22:40:15 by aalmheir          #+#    #+#             */
-/*   Updated: 2025/04/19 01:20:42 by aalmheir         ###   ########.fr       */
+/*   Created: 2025/04/19 01:10:45 by aalmheir          #+#    #+#             */
+/*   Updated: 2025/04/19 10:37:11 by aalmheir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_swap(int *a, int *b)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	temp;
 
 	temp = *a;
-	*a = *b;
-	*b = temp;
+	*a = temp / *b;
+	*b = temp % *b;
 }
+
