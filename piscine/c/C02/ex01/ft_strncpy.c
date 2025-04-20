@@ -6,20 +6,27 @@
 /*   By: aalmheir <aalmheir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 01:02:05 by aalmheir          #+#    #+#             */
-/*   Updated: 2025/04/20 10:44:42 by aalmheir         ###   ########.fr       */
+/*   Updated: 2025/04/20 13:13:48 by aalmheir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-// Returns 1 if the string is empty or contains only alphabetic characters, 0 otherwise.
-int ft_str_is_alpha(char *str)
+// Copies up to n characters from src to dest. Pads with '\0' if src is shorter.
+char    *ft_strncpy(char *dest, char *src, unsigned int n)
 {
-    while (*str != '\0')
+    unsigned int    i;
+
+    i = 0;
+    while (i < n && src[i] != '\0')
     {
-        if (!((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')))
-            return (0);
-        str++;
+        dest[i] = src[i];
+        i++;
     }
-    return (1);
+    while (i < n)
+    {
+        dest[i] = '\0';
+        i++;
+    }
+    return (dest);
 }
