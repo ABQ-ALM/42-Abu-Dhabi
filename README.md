@@ -1,2 +1,7 @@
-# Greetings to anyone who is reading this, I hope you are having a wonderful, if not here are all my projects for 42 to feast your eye on, it has the optimized way of solving plus the neccesary explaination for the code.
-# keep swimming ;)
+# Greetings to anyone reading this!
+
+I hope you're having a wonderful day. If not, here’s something to lift your spirits — a collection of all my 42 projects for you to feast your eyes on.
+
+Each one includes an optimized solution, along with clear explanations to help you understand behin what it functions. Enjoy!
+
+Keep swimming ;)
